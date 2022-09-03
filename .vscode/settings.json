@@ -1,0 +1,14 @@
+{
+    "files.watcherExclude": {
+        "**/target": true
+    },
+    "cSpell.ignoreWords": [
+        "ABCA",
+        "ABCAD",
+        "ABCDEFGHIGKLMNOPQRSTUVWXYZ",
+        "ABCDEFGHIJKLMNOPQRSTUWXYZ",
+        "Ciphertext",
+        "alpherbert",
+        "ciper"
+    ]
+}
