@@ -11,12 +11,10 @@ object q1{
         var Encrypt_text=""
         for(i<- 0 until plaintext.size){
             if(plaintext.charAt(i)==plaintext.charAt(i).toUpper){
-                val pt =Encrypt(plaintext.charAt(i),1,uppercase)
-                Encrypt_text=Encrypt_text+pt.toString()
+                Encrypt_text=Encrypt_text+Encrypt(plaintext.charAt(i),1,uppercase)
             }
             else{
-                val pt =Encrypt(plaintext.charAt(i),1,lowercase)
-                Encrypt_text=Encrypt_text+pt.toString()
+                Encrypt_text=Encrypt_text+Encrypt(plaintext.charAt(i),1,lowercase)
             }
         }
         println(Encrypt_text)
@@ -24,12 +22,12 @@ object q1{
         print("Decrypt:")
         for(i<-0 until Encrypt_text.size){
             if(Encrypt_text.charAt(i)==Encrypt_text.charAt(i).toUpper){
-                val ct =Decrypt(Encrypt_text.charAt(i),1,uppercase)
-                Decrypt_text=Decrypt_text+ct.toString()
+
+                Decrypt_text=Decrypt_text+Decrypt(Encrypt_text.charAt(i),1,uppercase)
             }
             else{
-                val ct =Decrypt(Encrypt_text.charAt(i),1,lowercase)
-                Decrypt_text=Decrypt_text+ct.toString()
+
+                Decrypt_text=Decrypt_text+Decrypt(Encrypt_text.charAt(i),1,lowercase)
             }
         }
         print(Decrypt_text)
