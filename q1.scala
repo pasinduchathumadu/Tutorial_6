@@ -7,7 +7,7 @@ object q1{
         val plaintext = readLine()
         val Encrypt = (c:Char,key:Int,a:String)=>a((a.indexOf(c)+key)%a.size)
         val Decrypt = (c:Char,key:Int,a:String)=>a((a.indexOf(c)-key)%a.size)
-        print("Ciphertext:")
+        print("Encrypt_text:")
         var Encrypt_text=""
         for(i<- 0 until plaintext.size){
             if(plaintext.charAt(i)==plaintext.charAt(i).toUpper){
